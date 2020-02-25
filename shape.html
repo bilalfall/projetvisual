@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -25,7 +26,7 @@
         background-color: lightgrey;
       }
 
-  /***6)Définition du trait de ligne sur 3px***/
+  /***6)Définition du trait de ligne sur***/
       line{
         stroke-width: 3px;
       }
@@ -71,6 +72,10 @@
 
   /***4)Sélection du rectangle avec l'id svg_2 et rendre la couleur du trait orange***/
   d3.select(svg_2).style("stroke","orange");
+
+  /***7)Utilisation d'une echelle de couleur d3 category10() pour définir la couleur des lignes***/
+  var colorScale_1 = d3.schemeCategory10;
+      colorScale_1.append("line");
 
   /***8)utilisation de d3 pour supprimer le texte en haut***/
   d3.select("text").remove();
